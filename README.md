@@ -6,13 +6,16 @@
 
 :white_check_mark: 3.5 obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinema [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/8646d75d88cf6a5c970198de647a1600dc9b2a04)
 
-:x: 4.0 Zaimplementuj funkcję setHead, która doda element na początku listy [Link do commita ]
+:x: 4.0 do powyższego należy dodać najnowszego Gradle’a oraz paczkę JDBC
+SQLite w ramach projektu na Gradle (build.gradle) [Link do commita ]
 
-:x: 4.5 Zaimplementuj funkcję append, która doda element we wskazanym miejscu w liście [Link do commita ]
+:x: 4.5 stworzyć przykład typu HelloWorld oraz uruchomienie aplikacji
+przez CMD oraz gradle
+ [Link do commita ]
 
-:x: 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej [Link do commita ]
+:x: 5.0 dodać konfigurację docker-compose [Link do commita ]
 
 
-Kod: [Link do zadania 1]
+Kod: [Link do zadania 1](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie01)
 
 ---
