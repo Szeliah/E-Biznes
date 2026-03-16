@@ -34,6 +34,7 @@ Należy stworzyć aplikację na frameworku Play lub Scalatra.
 :x: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
 pobierane z listy </br>  [Link do commita ]() </br>
 [link do dockerfile]()
+
 :x: 4.0 do Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy
 zgodnie z CRUD </br> 
 [Link do commita ]() </br>
