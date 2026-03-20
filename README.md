@@ -4,7 +4,7 @@
 :white_check_mark: 3.0 obraz ubuntu z Pythonem w wersji 3.10 </br> [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/d6472b8ce5eead4465d9c7d2d884041f382066e3) </br>
 [link do dockerfile]()
 
-:white_check_mark: 3.5 obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinema </br>  [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/ff24662146a58d966d0fabebdc865e75852ae10b) </br>
+:white_check_mark: 3.5 obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinema </br>  [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/8646d75d88cf6a5c970198de647a1600dc9b2a04) </br>
 [link do dockerfile]()
 
 :x: 4.0 do powyższego należy dodać najnowszego Gradle’a oraz paczkę JDBC
