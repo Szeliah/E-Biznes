@@ -1,7 +1,7 @@
 
 **Zadanie 1** Docker
 
-:white_check_mark: 3.0 obraz ubuntu z Pythonem w wersji 3.10 </br> [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/a2e41e5fd0f5751830abe2ff1580a16a917e8816) </br>
+:white_check_mark: 3.0 obraz ubuntu z Pythonem w wersji 3.10 </br> [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/d6472b8ce5eead4465d9c7d2d884041f382066e3) </br>
 [link do dockerfile]()
 
 :white_check_mark: 3.5 obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinema </br>  [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/8646d75d88cf6a5c970198de647a1600dc9b2a04) </br>
