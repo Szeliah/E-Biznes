@@ -42,7 +42,7 @@ skrypt uruchamiający aplikację via ngrok </br>
 
 :x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD </br> 
 
-Kod: [Link do zadania 2](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie02/App/zadanie02app)
+Kod: [Link do zadania 2](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie02/App/zadanie02app) </br> 
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie02-demo.mp4)
 
 ---
