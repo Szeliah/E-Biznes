@@ -28,25 +28,47 @@ Kod: [Link do zadania 1](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie01
 
 Należy stworzyć aplikację na frameworku Play lub Scalatra.
 
-:x: 3.0 Należy stworzyć kontroler do Produktów </br> [Link do commita]() </br>
-[link do dockerfile]()
+:x: 3.0 Należy stworzyć kontroler do Produktów </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/2097f9442864727c7c03af718613e60a07f59599) </br>
 
 :x: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
 pobierane z listy </br>  [Link do commita ]() </br>
-[link do dockerfile]()
+[link do obrazu]()
 
 :x: 4.0 do Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy
 zgodnie z CRUD </br> 
 [Link do commita ]() </br>
-[link do dockerfile]()
+[link do obrazu]()
 
 :x: 4.5 Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać
 skrypt uruchamiający aplikację via ngrok </br> 
 [Link do commita ]() </br>
-[link do dockerfile]()
+[link do obrazu]()
 
 :x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD </br> 
 [Link do commita ]() </br>
-[link do dockerfile]()
+[link do obrazu]()
 
 Kod: [Link do zadania 2](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie02)
+
+---
+
+**Zadanie 3** Kotlin
+
+:x: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor,
+która pozwala na przesyłanie wiadomości na platformę Discord </br> [Link do commita]()
+
+:x: 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z
+platformy Discord skierowane do aplikacji (bota) </br>  [Link do commita ]()
+
+:x: 4.0 Zwróci listę kategorii na określone żądanie użytkownika</br> 
+[Link do commita ]()
+
+:x: 4.5 Zwróci listę produktów wg żądanej kategoriik </br> 
+[Link do commita ]()
+
+:x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack lub Messenger </br> 
+[Link do commita ]()
+</br>
+Aplikację należy uruchomić na dockerze
+
+Kod: [Link do zadania 3](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie03)
