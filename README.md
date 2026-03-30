@@ -28,11 +28,10 @@ Kod: [Link do zadania 1](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie01
 
 Należy stworzyć aplikację na frameworku Play lub Scalatra.
 
-:x: 3.0 Należy stworzyć kontroler do Produktów </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/2097f9442864727c7c03af718613e60a07f59599) </br>
+:white_check_mark: 3.0 Należy stworzyć kontroler do Produktów </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/2097f9442864727c7c03af718613e60a07f59599) </br>
 
-:x: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
-pobierane z listy </br>  [Link do commita ]() </br>
-[link do obrazu]()
+:white_check_mark: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
+pobierane z listy </br>  [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/2ae2e80baedc1397ba4b064dd784fb71dfaba576) </br>
 
 :x: 4.0 do Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy
 zgodnie z CRUD </br> 
@@ -48,7 +47,7 @@ skrypt uruchamiający aplikację via ngrok </br>
 [Link do commita ]() </br>
 [link do obrazu]()
 
-Kod: [Link do zadania 2](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie02)
+Kod: [Link do zadania 2](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie02/App/zadanie02app)
 
 ---
 
