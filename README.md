@@ -49,21 +49,22 @@ Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Za
 
 **Zadanie 3** Kotlin
 
-:x: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor,
-która pozwala na przesyłanie wiadomości na platformę Discord </br> [Link do commita]()
+:white_check_mark: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor,
+która pozwala na przesyłanie wiadomości na platformę Discord </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/9d743a0a964029fcd8d501d3e2753a52e10db422)
 
-:x: 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z
-platformy Discord skierowane do aplikacji (bota) </br>  [Link do commita ]()
+:white_check_mark: 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z
+platformy Discord skierowane do aplikacji (bota) </br>  [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/a65c18f47cb3bd15adeb5521bdfdb8ed514fe61d)
 
 :x: 4.0 Zwróci listę kategorii na określone żądanie użytkownika</br> 
-[Link do commita ]()
+
 
 :x: 4.5 Zwróci listę produktów wg żądanej kategoriik </br> 
-[Link do commita ]()
+
 
 :x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack lub Messenger </br> 
-[Link do commita ]()
-</br>
+
+</br></br>
 Aplikację należy uruchomić na dockerze
 
-Kod: [Link do zadania 3](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie03)
+Kod: [Link do zadania 3](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie03/App)
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie03-demo.mp4)
