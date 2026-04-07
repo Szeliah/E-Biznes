@@ -59,7 +59,81 @@ fun main() {
         catch (e: Exception) {
             println("Wyjątek: ${e.message}")
         }
+        
+         val identifyPayload = buildJsonObject {
+            put("op", 2) 
+            putJsonObject("d") {
+                put("token", botToken)
+                put("intents", 33281) 
+                putJsonObject("properties") {
+                    put("\$os", "linux")
+                    put("\$browser", "ktor")
+                    put("\$device", "ktor")
+                }
+            }
+        }
 
+        client.webSocket(
+            method = io.ktor.http.HttpMethod.Get,
+            host = "gateway.discord.gg",
+            path = "/?v=10&encoding=json"
+        ) {
+            println("Połączono z Discord Gateway")
+
+            send(Frame.Text(Json.encodeToString(JsonObject.serializer(), identifyPayload)))
+
+            var heartbeatInterval = 0L
+
+            for (frame in incoming) {
+                frame as? Frame.Text ?: continue
+
+                val json = Json.parseToJsonElement(frame.readText()).jsonObject
+                val op = json["op"]?.jsonPrimitive?.content?.toInt()
+
+
+                if (op == 10) {
+
+                    heartbeatInterval =
+                        json["d"]!!.jsonObject["heartbeat_interval"]!!.jsonPrimitive.content.toLong()
+
+                    println("Heartbeat interwał: $heartbeatInterval")
+
+                    launch {
+                        while (true) {
+                            delay(heartbeatInterval)
+
+                            val heartbeat = buildJsonObject {
+                                put("op", 1)
+                                put("d", JsonNull)
+                            }
+
+                            send(
+                                Frame.Text(
+                                    Json.encodeToString(
+                                        JsonObject.serializer(),
+                                        heartbeat
+                                    )
+                                )
+                            )
+
+                            println("Heartbeat wysłany")
+                        }
+                    }
+                }
+
+                val eventType = json["t"]?.jsonPrimitive?.content
+
+
+                if (eventType == "MESSAGE_CREATE") {
+
+                    val data = json["d"]!!.jsonObject
+                    val content = data["content"]!!.jsonPrimitive.content
+                    val author = data["author"]!!.jsonObject["username"]!!.jsonPrimitive.content
+                    println("Odebrano wiadomość od $author: $content")
+                }
+            }
+
+        }
         client.close()
 
     }
