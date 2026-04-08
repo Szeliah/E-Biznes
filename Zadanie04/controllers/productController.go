@@ -10,12 +10,10 @@ import (
 	"myapp/models"
 )
 
-var validate = validator.New()
-
 func GetAllProducts(c *echo.Context) error {
 	
 	db := c.Get("db").(*gorm.DB)
-	
+
 	var products []models.Product
 	db.Find(&products)
 
@@ -47,6 +45,7 @@ func GetProductById(c *echo.Context) error {
 func CreateProduct(c *echo.Context) error {
 
 	db := c.Get("db").(*gorm.DB)
+	var validate = validator.New()
 
 	var product models.Product
 
@@ -66,6 +65,7 @@ func CreateProduct(c *echo.Context) error {
 func UpdateProduct(c *echo.Context) error {
 
 	db := c.Get("db").(*gorm.DB)
+	var validate = validator.New()
 
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
@@ -89,6 +89,8 @@ func UpdateProduct(c *echo.Context) error {
 		return c.JSON(http.StatusBadRequest, "error")
 	} 
 
+	updatedProduct.Name = oldProduct.Name
+	updatedProduct.Price = oldProduct.Price
 	db.Save(&updatedProduct)
 
 	return c.JSON(http.StatusOK, &updatedProduct)
