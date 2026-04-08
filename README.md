@@ -68,3 +68,31 @@ Aplikację należy uruchomić na dockerze
 
 Kod: [Link do zadania 3](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie03/App)
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie03-demo.mp4)
+
+---
+
+**Zadanie 4** Golang
+
+Należy stworzyć projekt w echo w Go. Należy wykorzystać gorm do
+stworzenia kilka modeli, gdzie pomiędzy dwoma musi być relacja. Należy
+zaimplementować proste endpointy do dodawania oraz wyświetlania danych
+za pomocą modeli. Jako bazę danych można wybrać dowolną, sugerowałbym
+jednak pozostać przy sqlite.
+
+:white_check_mark: 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
+miała kontroler Produktów zgodny z CRUD </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/bb8ca1a4f4a9f55ad1793db4cceecd6da16f0cf9) </br>
+
+:white_check_mark: 3.5 Należy stworzyć model Produktów wykorzystując gorm oraz
+wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast
+listy) </br>  [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/95ca9a0e2593659bedba1b01af6a665a46a4cdf8) </br>
+
+:white_check_mark: 4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint </br> 
+[Link do commita ](https://github.com/Szeliah/E-Biznes/commit/7298cd439e9aec323b7ab83e08c7fe837933e6ce) </br>
+
+:white_check_mark: 4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
+a produktem </br> [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/43332319e3216e507305f94f2291388d2190b8b0) </br>
+
+:x: 5.0 pogrupować zapytania w gorm’owe scope'y </br> 
+
+Kod: [Link do zadania 4](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie04) </br> 
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie04-demo.mp4)
