@@ -23,6 +23,7 @@ func main() {
 	
 	routes.ProductRoutes(e)
 	routes.CartRoutes(e)
+	routes.CategoryRoutes(e)
 
 	if err := e.Start(":8080"); err != nil {
 		e.Logger.Error("failed to start server", "error", err)

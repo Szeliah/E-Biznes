@@ -57,6 +57,13 @@ func CreateProduct(c *echo.Context) error {
 		return c.JSON(http.StatusBadRequest, "error")
 	}
 
+	var category models.Category
+	db.First(&category, product.CategoryID)
+
+	if category.ID == 0 {
+		return c.JSON(http.StatusBadRequest, "category not found")
+	}
+
 	db.Create(&product)
 
 	return c.JSON(http.StatusCreated, &product)
@@ -88,6 +95,13 @@ func UpdateProduct(c *echo.Context) error {
 	if vErr := validate.Struct(&updatedProduct); vErr != nil {
 		return c.JSON(http.StatusBadRequest, "error")
 	} 
+
+	var category models.Category
+	db.First(&category, updatedProduct.CategoryID)
+
+	if category.ID == 0 {
+		return c.JSON(http.StatusBadRequest, "category not found")
+	}
 
 	updatedProduct.Name = oldProduct.Name
 	updatedProduct.Price = oldProduct.Price
