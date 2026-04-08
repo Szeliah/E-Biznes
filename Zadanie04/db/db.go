@@ -15,6 +15,7 @@ func Connect() *gorm.DB {
 	}
 
 	db.AutoMigrate(&models.Product{})
+	db.AutoMigrate(&models.Cart{})
 
 	return db
 }
