@@ -3,115 +3,116 @@ package controllers
 import (
 	"net/http"
 	"strconv"
-	"sync"
 
+	"github.com/go-playground/validator/v10"
 	"github.com/labstack/echo/v5"
+	"gorm.io/gorm"
 	"myapp/models"
 )
 
-type ProductDTO struct {
-  Name  string `json:"name"`
-  Price int `json:"price"`
-}
-
-var idx = 4
-var lock = sync.Mutex{}
-
-var products = map[int]*models.Product{
-    1: {ID: 1, Name: "Młotek", Price: 32},
-    2: {ID: 2, Name: "Kask", Price: 60},
-    3: {ID: 3, Name: "Poziomica", Price: 45},
-}
-
+var validate = validator.New()
 
 func GetAllProducts(c *echo.Context) error {
-	lock.Lock()
-	defer lock.Unlock()
-	return c.JSON(http.StatusOK, products)
+	
+	db := c.Get("db").(*gorm.DB)
+	
+	var products []models.Product
+	db.Find(&products)
+
+	return c.JSON(http.StatusOK, &products)
 }
 
 func GetProductById(c *echo.Context) error {
-	lock.Lock()
-	defer lock.Unlock()
 	
+	db := c.Get("db").(*gorm.DB)
+
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		return c.JSON(http.StatusBadRequest, "id must be a number")
 	}
 
-	product, ok := products[id]
-	if !ok {
+	var product models.Product
+
+	db.First(&product, id)
+
+	if product.ID == 0 {
 		return c.JSON(http.StatusNotFound, "product not found")
 	}
 
-	return c.JSON(http.StatusOK, product)
+	return c.JSON(http.StatusOK, &product)
 }
 
 
 
 func CreateProduct(c *echo.Context) error {
-	lock.Lock()
-	defer lock.Unlock()
 
-	p := new(ProductDTO)
-	if err := c.Bind(p); err != nil {
+	db := c.Get("db").(*gorm.DB)
+
+	var product models.Product
+
+	if err := c.Bind(&product); err != nil {
 		return c.JSON(http.StatusBadRequest, "bad request")
 	}
 
-	product := &models.Product{
-		ID: idx,
-		Name: p.Name,
-		Price: p.Price,
+	if vErr := validate.Struct(&product); vErr != nil {
+		return c.JSON(http.StatusBadRequest, "error")
 	}
 
-	products[idx] = product
-	idx++
-	return c.JSON(http.StatusCreated, product)
+	db.Create(&product)
+
+	return c.JSON(http.StatusCreated, &product)
 }
 
 func UpdateProduct(c *echo.Context) error {
-	lock.Lock()
-	defer lock.Unlock()
 
-	p := new(ProductDTO)
-	if err := c.Bind(p); err != nil {
+	db := c.Get("db").(*gorm.DB)
+
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		return c.JSON(http.StatusBadRequest, "id must be a number")
+	}
+
+	var oldProduct models.Product
+	var updatedProduct models.Product
+
+	db.First(&oldProduct, id)
+
+	if oldProduct.ID == 0 {
+		return c.JSON(http.StatusNotFound, "product not found")
+	}
+
+	if err := c.Bind(&updatedProduct); err != nil {
 		return c.JSON(http.StatusBadRequest, "bad request")
 	}
 
-	id, err := strconv.Atoi(c.Param("id"))
-	if err != nil {
-		return c.JSON(http.StatusBadRequest, "id must be a number")
-	}
+	if vErr := validate.Struct(&updatedProduct); vErr != nil {
+		return c.JSON(http.StatusBadRequest, "error")
+	} 
 
-	product, ok := products[id]
-	if !ok {
-		return c.JSON(http.StatusNotFound, "product not found")
-	}
+	db.Save(&updatedProduct)
 
-	product.Name = p.Name
-	product.Price = p.Price
-
-	return c.JSON(http.StatusOK, product)
+	return c.JSON(http.StatusOK, &updatedProduct)
 }
 
 
-
 func DeleteProduct(c *echo.Context) error {
-	lock.Lock()
-	defer lock.Unlock()
+
+	db := c.Get("db").(*gorm.DB)
 
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		return c.JSON(http.StatusBadRequest, "id must be a number")
 	}
 
-	_, ok := products[id]
-	if !ok {
+	var product models.Product
+
+	db.First(&product, id)
+	if product.ID == 0 {
 		return c.JSON(http.StatusNotFound, "product not found")
 	}
 
-	delete(products, id)
+	db.Delete(&models.Product{}, id)
 
-	return c.JSON(http.StatusOK, "product deleted ")
+	return c.JSON(http.StatusOK, "product deleted")
 }
 
