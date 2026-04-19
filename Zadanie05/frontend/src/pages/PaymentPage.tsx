@@ -52,7 +52,7 @@ export default function PaymentPage() {
       <button onClick={handleSubmit}>Zapłać</button>
 
       {status === "success" && (
-        <p style={{ color: "green" }}>Płatność udana</p>
+        <p style={{ color: "green" }}>Płatność udała się</p>
       )}
 
       {status === "error" && (

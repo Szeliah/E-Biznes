@@ -4,7 +4,6 @@ import (
 	"backend/database"
 	"backend/route"
 	"log"
-	"net/http"
 
 	"github.com/labstack/echo/v5"
 	"github.com/labstack/echo/v5/middleware"
@@ -27,10 +26,6 @@ func main() {
 	if err := database.SeedProducts(db); err != nil {
 		log.Fatal(err)
 	}
-
-	e.GET("/", func(c *echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
-	})
 
 	route.ProductRoute(e, db)
 	route.PaymentRoute(e, db)

@@ -36,10 +36,10 @@ func (ctrl *ProductController) GetProducts(ctx *echo.Context) error {
 	var products []model.Product
 	ctrl.DB.Find(&products)
 
-	var response []ProductResponse
+	var res []ProductResponse
 	for _, p := range products {
-		response = append(response, ToProductResponse(p))
+		res = append(res, ToProductResponse(p))
 	}
 
-	return ctx.JSON(http.StatusOK, &response)
+	return ctx.JSON(http.StatusOK, &res)
 }

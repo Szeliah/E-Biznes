@@ -9,7 +9,5 @@ import (
 
 func ProductRoute(e *echo.Echo, db *gorm.DB) {
 	productController := controller.NewProductController(db)
-
 	e.GET("/products", productController.GetProducts)
-
 }

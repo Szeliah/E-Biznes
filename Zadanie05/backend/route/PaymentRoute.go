@@ -9,7 +9,5 @@ import (
 
 func PaymentRoute(e *echo.Echo, db *gorm.DB) {
 	paymentController := controller.NewPaymentController(db)
-
 	e.POST("/payment", paymentController.CreatePayment)
-
 }

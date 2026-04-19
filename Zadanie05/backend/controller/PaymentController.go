@@ -33,7 +33,5 @@ func (ctrl *PaymentController) CreatePayment(ctx *echo.Context) error {
 	}
 
 	db.Create(&payment)
-
 	return ctx.JSON(http.StatusCreated, &payment)
-
 }

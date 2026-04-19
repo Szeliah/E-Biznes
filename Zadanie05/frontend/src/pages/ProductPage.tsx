@@ -44,7 +44,7 @@ export default function ProductPage() {
 
     return (
         <>
-            <h2 className="title">Produkty</h2>
+            <h2 className="title">Nasze produkty</h2>
             <div className="container">
                 {products.map((p) => (
                     <ProductCard key={p.id} product={p} />
