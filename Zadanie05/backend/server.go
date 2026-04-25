@@ -12,7 +12,10 @@ import (
 func main() {
 	e := echo.New()
 	e.Use(middleware.RequestLogger())
-	e.Use(middleware.CORS("http://127.0.0.1:5173"))
+	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+		AllowOrigins: []string{"http://localhost:5173"},
+		AllowMethods: []string{"GET", "POST", "PUT", "DELETE"},
+	}))
 
 	db, err := database.Connect()
 	if err != nil {
