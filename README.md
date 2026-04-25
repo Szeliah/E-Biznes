@@ -96,3 +96,34 @@ a produktem </br> [Link do commita ](https://github.com/Szeliah/E-Biznes/commit/
 
 Kod: [Link do zadania 4](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie04) </br> 
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie04-demo.mp4)
+
+---
+
+**Zadanie 5** Frontend
+
+Należy stworzyć aplikację kliencką wykorzystując bibliotekę React.js.
+W ramach projektu należy stworzyć trzy komponenty: Produkty, Koszyk
+oraz Płatności. Koszyk oraz Płatności powinny wysyłać do aplikacji
+serwerowej dane, a w Produktach powinniśmy pobierać dane o produktach
+z aplikacji serwerowej. Aplikacja serwera w jednym z trzech języków:
+Kotlin, Scala, Go. Dane pomiędzy wszystkimi komponentami powinny być
+przesyłane za pomocą React hooks.
+
+:white_check_mark: 3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
+Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
+Produktach powinniśmy pobierać dane o produktach z aplikacji
+serwerowej </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/b56d48b4110e17ad653747e8567eadfd65f24621) </br>
+
+:x: 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing </br>   </br>
+
+:x: 4.0 Dane pomiędzy wszystkimi komponentami powinny być przesyłane za
+pomocą React hooks </br> 
+ </br>
+
+:x: 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
+kliencką na dockerze via docker-compose </br>  </br>
+
+:x: 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS </br> 
+
+Kod: [Link do zadania 5](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie05) </br> 
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie05-demo.mp4)
