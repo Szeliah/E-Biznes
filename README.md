@@ -142,7 +142,7 @@ uruchamiać się na platformie Browserstack (5.0). Proszę pamiętać o
 stworzeniu darmowego konta via https://education.github.com/pack.
 
 :white_check_mark: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
-(Kotlin, Python, Java, JS, Go, Scala) </br> [Link do commita]() </br>
+(Kotlin, Python, Java, JS, Go, Scala) </br> [Link do commita](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie06/tests) </br>
 
 :x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
 asercji </br>   </br>
@@ -156,8 +156,7 @@ minimum jednym scenariuszem negatywnym per endpointose </br>  </br>
 
 :x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku </br> 
 
-Kod: [Link do zadania 5](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie06) </br> 
-Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie06-demo.mp4)
+Kod: [Link do zadania 6](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie06) </br> 
 
 ---
 
@@ -170,7 +169,7 @@ branch, dwa repozytoria) do Sonara w wersji chmurowej
 dodać widżety sonarowe do README w repozytorium dane projektu z
 wynikami.
 
-:white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+:x: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
 hookach gita </br> [Link do commita]() </br>
 
 :x: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
