@@ -127,3 +127,64 @@ kliencką na dockerze via docker-compose </br>  </br>
 
 Kod: [Link do zadania 5](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie05) </br> 
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie05-demo.mp4)
+
+---
+
+**Zadanie 6** Testy
+
+Należy stworzyć 20 przypadków testowych w jednym z rozwiązań:
+
+- Cypress JS (JS)
+- Selenium (Kotlin, Python, Java, JS, Go, Scala)
+
+Testy mają w sumie zawierać minimum 50 asercji (3.5). Mają również
+uruchamiać się na platformie Browserstack (5.0). Proszę pamiętać o
+stworzeniu darmowego konta via https://education.github.com/pack.
+
+:white_check_mark: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+(Kotlin, Python, Java, JS, Go, Scala) </br> [Link do commita]() </br>
+
+:x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
+asercji </br>   </br>
+
+:x: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+projektu z minimum 50 asercjam </br> 
+ </br>
+
+:x: 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+minimum jednym scenariuszem negatywnym per endpointose </br>  </br>
+
+:x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku </br> 
+
+Kod: [Link do zadania 5](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie06) </br> 
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie06-demo.mp4)
+
+---
+
+**Zadanie 7** Sonar
+
+Należy dodać projekt aplikacji klienckiej oraz serwerowej (jeden
+branch, dwa repozytoria) do Sonara w wersji chmurowej
+(https://sonarcloud.io/). Należy poprawić aplikacje uzyskując 0 bugów,
+0 zapaszków, 0 podatności, 0 błędów bezpieczeństwa. Dodatkowo należy
+dodać widżety sonarowe do README w repozytorium dane projektu z
+wynikami.
+
+:white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+hookach gita </br> [Link do commita]() </br>
+
+:x: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji serwerowej) </br>   </br>
+
+:x: 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji serwerowej) </br> 
+ </br>
+
+:x: 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji serwerowej) </br>  </br>
+
+:x: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
+aplikacji klienckiej </br> 
+
+Kod: [Link do zadania 5](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie07) </br> 
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie07-demo.mp4)
