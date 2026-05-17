@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "Running golangci-lint..."
+
+cd Zadanie07/backend || exit
+
+golangci-lint run
+
+if [ $? -ne 0 ]; then
+  echo "Lint failed. Commit aborted."
+  exit 1
+fi
+
+echo "Lint passed."
+exit 0
