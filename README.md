@@ -169,8 +169,8 @@ branch, dwa repozytoria) do Sonara w wersji chmurowej
 dodać widżety sonarowe do README w repozytorium dane projektu z
 wynikami.
 
-:x: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
-hookach gita </br> [Link do commita]() </br>
+:white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+hookach gita </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/a4bfc1143dcbb8989867649897c3a1641f38a866) </br>
 
 :x: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
 aplikacji serwerowej) </br>   </br>
@@ -185,5 +185,5 @@ w kodzie w Sonarze (kod aplikacji serwerowej) </br>  </br>
 :x: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
 aplikacji klienckiej </br> 
 
-Kod: [Link do zadania 5](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie07) </br> 
+Kod: [Link do zadania 7](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie07) </br> 
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie07-demo.mp4)
