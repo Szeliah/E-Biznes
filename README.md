@@ -162,6 +162,8 @@ Kod: [Link do zadania 6](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie06
 
 **Zadanie 7** Sonar
 
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Szeliah_E-Biznes&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Szeliah_E-Biznes)
+
 Należy dodać projekt aplikacji klienckiej oraz serwerowej (jeden
 branch, dwa repozytoria) do Sonara w wersji chmurowej
 (https://sonarcloud.io/). Należy poprawić aplikacje uzyskując 0 bugów,
