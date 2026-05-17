@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Running golangci-lint..."
+echo "Running golangci-lint"
 
 cd Zadanie07/backend || exit
 
