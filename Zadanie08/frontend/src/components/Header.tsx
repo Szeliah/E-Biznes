@@ -1,11 +1,33 @@
 import "./Header.css"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 type HeaderProps = {
     isLoggedIn: boolean;
+    setIsLoggedIn: React.Dispatch<
+        React.SetStateAction<boolean>
+    >;
+    userEmail: string;
 };
 
-export default function Header({ isLoggedIn }: HeaderProps) {
+export default function Header({ isLoggedIn, setIsLoggedIn, userEmail }: HeaderProps) {
+    
+    const navigate = useNavigate();
+
+    async function handleLogout() {
+
+        await fetch(
+            "http://localhost:3000/logout",
+            {
+                method: "POST",
+                credentials: "include",
+            }
+        );
+
+        setIsLoggedIn(false);
+        navigate("/");
+    }
+    
+    
     return (
         <>
             <div className="header-container">
@@ -29,8 +51,9 @@ export default function Header({ isLoggedIn }: HeaderProps) {
                             </Link>
                         </div>
                     ) : (
-                        <div className="header-container_item">
-                            <span>Logout</span>
+                        <div className="header-container_item logged-user">
+                            <span>{userEmail}</span>
+                            <span onClick={handleLogout}>Logout</span>
                         </div>
                     )}
                     </div>

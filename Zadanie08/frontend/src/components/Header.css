@@ -38,3 +38,9 @@ h1 {
 .header-container_item a:hover {
     color: antiquewhite;
 }
+
+.logged-user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}

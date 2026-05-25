@@ -5,12 +5,15 @@ import "./Register.css"
 
 type RegisterProps = {
     setIsLoggedIn: React.Dispatch<
-        React.SetStateAction<boolean>
+    React.SetStateAction<boolean>
+    >;
+    setUserEmail: React.Dispatch<
+    React.SetStateAction<string>
     >;
 };
 
 
-export default function Signup({ setIsLoggedIn }: RegisterProps) {
+export default function Signup({ setIsLoggedIn, setUserEmail }: RegisterProps) {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
 
@@ -51,7 +54,9 @@ export default function Signup({ setIsLoggedIn }: RegisterProps) {
             );
 
             if (!res.ok) {
-                setError("Invalid credentials");
+                const errorData = await res.json();
+                setError(errorData.message);
+
                 return;
             }
 
@@ -62,6 +67,7 @@ export default function Signup({ setIsLoggedIn }: RegisterProps) {
 
             setIsLoggedIn(true);
             setSuccess("Account created!");
+            setUserEmail(email);
             setError("");
 
             setTimeout(() => {

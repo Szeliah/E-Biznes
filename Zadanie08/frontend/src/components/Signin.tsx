@@ -5,11 +5,14 @@ import "./Signin.css"
 
 type SigninProps = {
     setIsLoggedIn: React.Dispatch<
-        React.SetStateAction<boolean>
+    React.SetStateAction<boolean>
+    >;
+    setUserEmail: React.Dispatch<
+    React.SetStateAction<string>
     >;
 };
 
-export default function Signup({ setIsLoggedIn }: SigninProps) {
+export default function Signup({ setIsLoggedIn, setUserEmail }: SigninProps) {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
 
@@ -49,15 +52,18 @@ export default function Signup({ setIsLoggedIn }: SigninProps) {
                 }
             );
 
-            if (!res.ok) {
-                setError("Invalid credentials");
-                return;
-            }
+        if (!res.ok) {
+            const errorData = await res.json();
+            setError(errorData.message);
+
+            return;
+        }
 
             const data = await res.json();
             console.log(data);
 
             setIsLoggedIn(true);
+            setUserEmail(email);
             setSuccess("Successfully logged in!");
             setError("");
 
