@@ -189,3 +189,34 @@ aplikacji klienckiej </br>
 
 Kod: [Link do zadania 7](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie07) </br> 
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie07-demo.mp4)
+
+---
+
+**Zadanie 8** Oauth2
+
+Należy skonfigurować klienta Oauth2 (4.0). Dane o użytkowniku wraz z
+tokenem powinny być przechowywane po stronie bazy serwera, a nowy
+token (inny niż ten od dostawcy) powinien zostać wysłany do klienta
+(React). Można zastosować mechanizm sesji lub inny dowolny (5.0).
+Zabronione jest tworzenie klientów bezpośrednio po stronie React'a
+wyłączając z komunikacji aplikację serwerową.
+
+Prawidłowa komunikacja: react-sewer-dostawca-serwer(via return
+uri)-react.
+
+:white_check_mark: 3.0 logowanie przez aplikację serwerową (bez Oauth2)</br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/3056bc86582e1dc5e8eb4f0622db67134f41c352) </br>
+
+:white_check_mark: 3.5 rejestracja przez aplikację serwerową (bez Oauth2) [Link do commita](https://github.com/Szeliah/E-Biznes/commit/fc4329ecc2ab98e99f2cf608b8beaf4c0449145b) </br>   </br>
+
+:x: 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji serwerowej) </br> 
+ </br>
+
+:x: 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji serwerowej) </br>  </br>
+
+:x: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
+aplikacji klienckiej </br> 
+
+Kod: [Link do zadania 8](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie08) </br> 
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie08-demo.mp4)
