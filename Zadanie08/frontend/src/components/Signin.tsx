@@ -95,12 +95,12 @@ export default function Signup({ setIsLoggedIn }: SigninProps) {
                 </button>
             </form>
             <p className="auth-switch">
-    Don't have an account?{" "}
+                Don't have an account?{" "}
 
-    <span onClick={() => navigate("/register")}>
-        Sign up
-    </span>
-</p>
+                <span onClick={() => navigate("/register")}>
+                    Sign up
+                </span>
+            </p>
         </div>
     );
 }
