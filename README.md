@@ -220,3 +220,32 @@ aplikacji klienckiej </br>
 
 Kod: [Link do zadania 8](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie08) </br> 
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie08-demo.mp4)
+
+---
+
+**Zadanie 9** ollama
+
+Należy rozszerzyć funkcjonalność wcześniej stworzonego bota. Do niego
+należy stworzyć aplikację frontendową, która połączy się z osobnym
+serwisem, który przeanalizuje tekst od użytkownika i prześle zapytanie
+do GPT, a następnie prześle odpowiedź do użytkownika. Cały projekt
+należy stworzyć w Pythonie.
+
+:white_check_mark: 3.0 należy stworzyć po stronie serwerowej osobny serwis do łącznienia z
+chatGPT</br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/2c58fd95acaeb2fe2a109fc768a7b2f4449d58be) </br>
+
+:x: 3.5 należy połączyć serwis z interfejsem frontendowym via serwis w
+Kotlinie (zadanie 3) - discord + JS</br>   </br>
+
+:x: 4.0 stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy </br> 
+ </br>
+
+:x: 4.5 filtrowanie po zagadnieniach związanych ze sklepem (np.
+ograniczenie się jedynie do ubrań oraz samego sklepu) do GPT </br>  </br>
+
+:x: 5.0 filtrowanie odpowiedzi po sentymencie </br> 
+
+Można wykorzystać lokalny model przez ollama (https://ollama.com/).
+
+Kod: [Link do zadania 9](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie09) </br> 
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie09-demo.mp4)
