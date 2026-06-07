@@ -173,6 +173,7 @@ wynikami.
 
 :white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
 hookach gita </br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/a4bfc1143dcbb8989867649897c3a1641f38a866) </br>
+[Link do githooka](https://github.com/Szeliah/E-Biznes/blob/main/.githooks/pre-commit)</br>
 
 :x: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
 aplikacji serwerowej) </br>   </br>
@@ -249,3 +250,28 @@ Można wykorzystać lokalny model przez ollama (https://ollama.com/).
 
 Kod: [Link do zadania 9](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie09) </br> 
 Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie09-demo.mp4)
+
+---
+
+**Zadanie 10** Chmura
+
+:white_check_mark: Należy stworzyć odpowiednie instancje po stronie chmury na
+dockerze</br> [Link do commita](https://github.com/Szeliah/E-Biznes/commit/8cf4d154e6521f520f8b2fd8944c3d63a7e16f27)</br>
+[Link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie10-demo.mp4) </br>
+[Link do strony (jeżeli serwer jest włączony)](http://20.215.232.214)
+</br>
+
+:x: 3.5 Stworzyć odpowiedni pipeline w Github Actions do budowania
+aplikacji (np. via fatjar)</br>   </br>
+
+:x: 4.0 Dodać notyfikację mailową o wynikach z sonara </br> 
+ </br>
+
+:x: 4.5 Dodać krok z deploymentem aplikacji klienckiej na chmurę (obie ze
+sobą rozmawiają) </br>  </br>
+
+:x: 5.0 Dodać uruchomienie regresyjnych testów automatycznych
+(funkcjonalnych) jako krok w Actions w Browserstacku </br> 
+
+Kod: [Link do zadania 10](https://github.com/Szeliah/E-Biznes/tree/main/Zadanie10) </br> 
+Demo: [link do nagrania](https://github.com/Szeliah/E-Biznes/blob/main/Assets/Zadanie10-demo.mp4)
