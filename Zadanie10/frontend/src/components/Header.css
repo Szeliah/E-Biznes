@@ -1,0 +1,46 @@
+.header-container {
+    display: flex;
+    margin: auto;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+}
+
+.header-container__left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-container_item:hover {
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.header-container_item a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-container_item a:visited {
+    color: white;
+}
+
+.header-container_item a:hover {
+    color: antiquewhite;
+}
+
+.logged-user {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
