@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    environment:
+      - PORT=3000
+      - SESSION_SECRET=super-secret-key
+    ports:
+      - "3000:3000"
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
